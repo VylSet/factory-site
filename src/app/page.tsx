@@ -1,8 +1,5 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Download } from 'lucide-react'
 import Image from 'next/image'
-import blank from '../../public/300png.png'
 // import chemical from '../../public/chemical.png'
 
 interface FactorioCard {
