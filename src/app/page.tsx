@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Download } from 'lucide-react'
 import Image from 'next/image'
 import blank from '../../public/300png.png'
+// import chemical from '../../public/chemical.png'
 
 interface FactorioCard {
   title: string
@@ -17,43 +18,43 @@ const factorioData: FactorioCard[] = [
     title: "Chemical Stager",
     dimensions: "6x6",
     frames: 1,
-    image: "/placeholder.svg?height=200&width=200",
-    icon: "/placeholder.svg?height=24&width=24"
+    image: "/images/300png.png",
+    icon: "/chemical.png",
   },
   {
     title: "Quantum Stabilizer",
     dimensions: "6x6",
     frames: 100,
-    image: "/placeholder.svg?height=200&width=200",
-    icon: "/placeholder.svg?height=24&width=24"
+    image: "/chemical.png",
+    icon: "/chemical.png",
   },
   {
     title: "Pathogen Lab",
     dimensions: "7x7",
     frames: 60,
-    image: "/placeholder.svg?height=200&width=200",
-    icon: "/placeholder.svg?height=24&width=24"
+    image: "/chemical.png",
+    icon: "/chemical.png",
   },
   {
     title: "Oxidizer",
     dimensions: "4x4",
     frames: 60,
-    image: "/placeholder.svg?height=200&width=200",
-    icon: "/placeholder.svg?height=24&width=24"
+    image: "/chemical.png",
+    icon: "/chemical.png",
   },
   {
     title: "Fusion Reactor",
     dimensions: "6x6",
     frames: 60,
-    image: "/placeholder.svg?height=200&width=200",
-    icon: "/placeholder.svg?height=24&width=24"
+    image: "/chemical.png",
+    icon: "/chemical.png",
   },
   {
     title: "Scrubber",
     dimensions: "3x3",
     frames: 60,
-    image: "/placeholder.svg?height=200&width=200",
-    icon: "/placeholder.svg?height=24&width=24"
+    image: "/chemical.png",
+    icon: "/chemical.png",
   }
 ]
 
@@ -95,10 +96,17 @@ export default function FactorioPortfolio() {
                         <p className="text-zinc-200">{card.frames}</p>
                       </div>
                     </div>
-                    <Button className="w-full bg-green-600 hover:bg-green-700 text-white mt-4">
+                    {/* <Button className="w-[192px] h-[47px] text-white relative bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%203-L1QAIpbjRZASjFJeUxyrcR2hABxtU7.svg')] bg-no-repeat bg-cover hover:opacity-90 transition-opacity">
                       <Download className="w-4 h-4 mr-2" />
                       Download
-                    </Button>
+                    </Button> */}
+                      <div className="relative w-[192px] h-[47px] -ml-4">
+                        <button className="absolute inset-0 bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%203-L1QAIpbjRZASjFJeUxyrcR2hABxtU7.svg')] bg-no-repeat bg-cover text-white hover:opacity-90 transition-opacity flex items-center justify-center">
+                          <Download className="w-4 h-4 mr-2" />
+                          Download
+                        </button>
+                      </div>
+
                   </div>
                   {/* Right Column - Image */}
                   <div className="flex-1">
@@ -108,7 +116,7 @@ export default function FactorioPortfolio() {
                       className="w-full h-full object-cover"
                     /> */}
                     <Image
-                    src={blank}
+                    src={'/chemical.png'}
                     alt={"alt"}
                     width={300}
                     height={300}
