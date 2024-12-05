@@ -85,15 +85,15 @@ export default function FactorioPortfolio() {
               <CardContent className="p-0">
                 <div className="flex">
                   {/* Left Column - Metadata */}
-                  <div className="w-32 p-4 flex flex-col justify-center">
-                    <div className="space-y-4">
+                  <div className="w-32 p-4 flex flex-col justify-center items-end">
+                    <div className="space-y-1">
                       <div>
                         <p className="text-lg text-[#818181] text-right">DIMENSIONS</p>
-                        <p className="text-zinc-200 text-right">{card.dimensions}</p>
+                        <p className="text-lg text-zinc-200 text-right">{card.dimensions}</p>
                       </div>
                       <div>
                         <p className="text-lg text-[#818181] text-right">FRAMES</p>
-                        <p className="text-zinc-200 text-right">{card.frames}</p>
+                        <p className="text-lg text-zinc-200 text-right">{card.frames}</p>
                       </div>
                     <div className="relative w-[192px] h-[47px] -ml-4">
                       <button className="text-3xl absolute inset-0 bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%203-L1QAIpbjRZASjFJeUxyrcR2hABxtU7.svg')] bg-no-repeat bg-cover text-black hover:opacity-90 transition-opacity flex items-center justify-center">
