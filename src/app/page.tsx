@@ -71,32 +71,32 @@ export default function FactorioPortfolio() {
       {/* <div className="w-full h-8 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBmaWxsPSIjZmZkNzAwIiBkPSJNMCAwaDIwbDIwIDIwSDIweiIvPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0yMCAwaDE4bC0yMCAyMEgweiIvPjwvc3ZnPg==')] bg-repeat-x mb-8" /> */}
       
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-12">
           {factorioData.map((card, index) => (
-            <Card key={index} className="bg-zinc-900/50 border-zinc-800 text-zinc-100">
-              <CardHeader className="flex flex-row items-center justify-center gap-2 pb-2">
+            <Card key={index} className="bg-zinc-900/40 border-zinc-800/40 text-zinc-100">
+              <CardHeader className="flex flex-row items-center justify-center gap-2 pb-2 pt-2">
                 <img
                   src={card.icon}
                   alt=""
                   className="w-6 h-6"
                 />
-                <h3 className="text-3xl font-bold text-[#FFE6C0]">{card.title}</h3>
+                <h3 className="text-4xl font-bold text-[#FFE6C0] padding-top-0">{card.title}</h3>
               </CardHeader>
               <CardContent className="p-0">
                 <div className="flex">
                   {/* Left Column - Metadata */}
-                  <div className="w-32 p-4 flex flex-col justify-center items-end">
+                  <div className="w-34 p-1 pl-4 flex flex-col justify-center items-end">
                     <div className="space-y-1">
                       <div>
-                        <p className="text-lg text-[#818181] text-right">DIMENSIONS</p>
-                        <p className="text-lg text-zinc-200 text-right">{card.dimensions}</p>
+                        <p className="text-2xl text-[#818181] text-right leading-none">DIMENSIONS</p>
+                        <p className="text-2xl text-zinc-200 text-right">{card.dimensions}</p>
                       </div>
                       <div>
-                        <p className="text-lg text-[#818181] text-right">FRAMES</p>
-                        <p className="text-lg text-zinc-200 text-right">{card.frames}</p>
+                        <p className="text-2xl text-[#818181] text-right leading-none">FRAMES</p>
+                        <p className="text-2xl text-zinc-200 text-right">{card.frames}</p>
                       </div>
-                    <div className="relative w-[192px] h-[47px] -ml-4">
-                      <button className="text-3xl absolute inset-0 bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%203-L1QAIpbjRZASjFJeUxyrcR2hABxtU7.svg')] bg-no-repeat bg-cover text-black hover:opacity-90 transition-opacity flex items-center justify-center">
+                    <div className="relative w-[115.2px] h-[28.2px] ml-auto">
+                      <button className="text-xl absolute inset-0 bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%203-L1QAIpbjRZASjFJeUxyrcR2hABxtU7.svg')] bg-no-repeat bg-cover text-black hover:opacity-90 transition-opacity flex items-center justify-center">
                         {/* <Download className="w-4 h-4 mr-2" /> */}
                         Download
                       </button>
